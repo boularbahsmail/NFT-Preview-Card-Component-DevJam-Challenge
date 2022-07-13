@@ -1,0 +1,175 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --White: #ffffff;
+    --Black: #000000;
+    --Gray: #8199bb;
+    --Teal: #15efea;
+    --Teal2: #15efeb94;
+    --Blue: #15273f;
+    --Dark-Blue: #0c1729;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 100vh;
+    padding: 20px 15px;
+    padding-bottom: 0;
+    background-color: var(--Dark-Blue);
+}
+
+.container .Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--Blue);
+}
+
+.container .Card .Card-Img {
+    position: relative;
+}
+
+.container .Card .Card-Img:hover
+.view {
+    opacity: 1;
+}
+
+.container .Card .Card-Img .view {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    height: 99%;
+    display: grid;
+    place-items: center;
+    background-color: var(--Teal2);
+    border-radius: 15px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.container .Card .Card-Img .view img {
+    width: 60px;
+    height: 60px;
+}
+
+.container .Card .Card-Img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container .Card .Card-Text h2 a {
+    color: var(--White);
+    transition: .2s;
+}
+
+.container .Card .Card-Text h2 a:hover {
+    color: var(--Teal);
+}
+
+.container .Card .Card-Text p {
+    color: var(--Gray);
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.container .Card .Card-Text .Price-Duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Gray);
+}
+
+.container .Card .Card-Text .Price-Duration h3,
+.container .Card .Card-Text .Price-Duration h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .Card .Card-Text .Price-Duration h3 span,
+.container .Card .Card-Text .Price-Duration h4 span {
+    margin-left: 5px;
+}
+
+.container .Card .Card-Text .Price-Duration h3 {
+    color: var(--Teal);
+}
+
+.container .Card .Card-Text .Price-Duration h4 {
+    font-weight: initial;
+    color: var(--Gray);
+}
+
+.container .Card .Card-Text .author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .Card .Card-Text .author .author-img img {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.container .Card .Card-Text .author .author-text {
+    margin-left: 10px;
+}
+
+.container .Card .Card-Text .author .author-text h4 {
+    color: var(--Gray);
+    font-weight: initial;
+}
+
+.container .Card .Card-Text .author .author-text h4 span {
+    color: var(--White);
+    transition: .2s;
+}
+
+.container .Card .Card-Text .author .author-text h4 span:hover {
+    color: var(--Teal);
+}
+
+.container h5 {
+    text-align: center;
+    padding: 20px;
+    color: var(--White);
+    font-weight: initial;
+    line-height: 25px;
+}
+
+.container h5 a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #71bfff;
+}
